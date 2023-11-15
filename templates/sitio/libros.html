@@ -3,54 +3,20 @@
 
 
     <div class="row">
-        <h2>GERENCIA DE DESARROLLO TERRITORIAL</h2>       
-        <div class="col-6">
+        {% for libro in libros %}
+        <div class="col-md-6">
             <div class="card">
-                <img class="card-img-top" src="https://books.goalkicker.com/PythonBook/PythonGrow.png" alt="Sub Gerencia de Obras">
+                <img class="card-img-top" src="/img/{{ libro[2]}}" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Sub Gerencia de Obras</h4>
-                    <p class="card-text">Es responsable de la Ejecución, Evaluación y Monitoreo de los proyectos y obras que ejecuta el municipio</p>
-                    <br>
-                    <a name="mas" id="mas" class="btn btn-success" href="#" role="button">mas...</a>
+                    <h4 class="card-title">{{ libro[1] }}</h4>
+                    <p class="card-text"> El mejor libro <br>
+                    <a name="mas" id="mas" class="btn btn-success" href="#" role="button">Descargar</a>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="card">
-                <img class="card-img-top" src="https://books.goalkicker.com/PythonBook/PythonGrow.png" alt="Title">
-                <div class="card-body">
-                    <h4 class="card-title">Sub Gerencia de Planeamineto Urbano y Catastro</h4>
-                    <p class="card-text">Ubicar y delimitar zonas para efectuar el catastro urbano y rural.</p>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">mas...</a>
-                </div>
-            </div>
-        </div>        
+        {% endfor %}      
     </div>
-    <br>
-    <br>
-    <div class="row">
-        <div class="col-6">
-            <div class="card">
-                <img class="card-img-top" src="https://books.goalkicker.com/PythonBook/PythonGrow.png" alt="Diseño sin título">
-                <div class="card-body">
-                    <h4 class="card-title">Sub Gerencia de Centro Histórico</h4>
-                    <p class="card-text">Órgano de tercer nivel organizacional, responsable de dirigir, gestionar y coordinar los planes, programas y proyectos</p>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">mas...</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card">
-                <img class="card-img-top" src="https://books.goalkicker.com/PythonBook/PythonGrow.png" alt="Title">
-                <div class="card-body">
-                    <h4 class="card-title">Sub Gerencia de Control y Licencias</h4>
-                    <p class="card-text">Responsable de ejecutar y controlar las actividades relacionadas con la comercialización de productos de consumo humano.</p>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">mas...</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
     <br>
 
 
